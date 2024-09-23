@@ -10,10 +10,10 @@ Globals:
 Parameters:
   SnsArn:
     Type: String
-    Default: 'arn:aws:sns:${AWS::Region}:${AWS::AccountId}:SNS-api_images'
+    Default: !Sub "arn:aws:sns:${AWS::Region}:${AWS::AccountId}:SNS-api_images"
   SqsArn:
     Type: String
-    Default: 'arn:aws:sqs:${AWS::Region}:${AWS::AccountId}:SQS-api_images'
+    Default: !Sub "arn:aws:sqs:${AWS::Region}:${AWS::AccountId}:SQS-api_images"
 
 Resources:
   NotificationLambdaFunction:
