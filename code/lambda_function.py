@@ -2,7 +2,7 @@ import json
 import boto3
 import os
 
-print('Loading function v1.6')
+print('Loading function v1.7')
 
 client = boto3.client('sns')
 
